@@ -8,8 +8,8 @@ export async function saveDiaryAction(diaryText: string) {
   }
 
   const payload = {
-    datetime: new Date().toLocaleString("ko-KR", { timeZone: "Asia/Seoul" }),
-    diary: diaryText
+    daytime: new Date().toLocaleString("ko-KR", { timeZone: "Asia/Seoul" }),
+    memo: diaryText
   };
 
   try {
